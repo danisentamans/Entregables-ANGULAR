@@ -1,0 +1,25 @@
+<button (click)="toggleColumns()">Ocultar Columnas</button>
+<button (click)="toggleHeaderStyle()">Aplicar color a los títulos</button>
+
+<table>
+  <thead [ngClass]="{ 'highlight-header': isHeaderHighlighted }">
+    <tr>
+      <th *ngIf="showFirstColumn">Columna 1</th>
+      <th *ngIf="showSecondColumn">Columna 2</th>
+      <th>Columna 3</th>
+      <th>Columna 4</th>
+      <th>Columna 5</th>
+      <th>Columna 6</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of items">
+      <td *ngIf="showFirstColumn">{{ item.col1 }}</td>
+      <td *ngIf="showSecondColumn">{{ item.col2 }}</td>
+      <td>{{ item.col3 }}</td>
+      <td>{{ item.col4 }}</td>
+      <td>{{ item.col5 }}</td>
+      <td>{{ item.col6 }}</td>
+    </tr>
+  </tbody>
+</table>

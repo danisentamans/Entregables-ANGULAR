@@ -1,0 +1,19 @@
+<h2 mat-dialog-title>Introduce la información</h2>
+<mat-dialog-content [formGroup]="form">
+  <mat-form-field>
+    <mat-label>Nombre</mat-label>
+    <input matInput formControlName="name">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Correo</mat-label>
+    <input matInput formControlName="email">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Dirección</mat-label>
+    <input matInput formControlName="address">
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="onCancel()">Cancelar</button>
+  <button mat-button (click)="onSubmit()">Enviar</button>
+</mat-dialog-actions>

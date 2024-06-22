@@ -1,0 +1,7 @@
+<!-- src/app/tienda/producto-detalle/producto-detalle.component.html -->
+<div class="producto-detalle-container" *ngIf="producto">
+  <h2>{{ producto.title }}</h2>
+  <img [src]="producto.image" alt="{{ producto.title }}">
+  <p>{{ producto.description }}</p>
+  <p class="price">Precio: {{ producto.price }} €</p>
+</div>

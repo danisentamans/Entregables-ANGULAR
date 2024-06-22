@@ -1,0 +1,14 @@
+/* src/app/material-dialog/material-dialog.component.scss */
+.dialog-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.form-data {
+  margin-top: 20px;
+  p {
+    margin: 5px 0;
+  }
+}

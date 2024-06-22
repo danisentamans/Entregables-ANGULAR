@@ -1,0 +1,29 @@
+/* src/app/tienda/productos-lista/productos-lista.component.scss */
+.productos-lista-container {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.productos-lista-container h2 {
+  margin-bottom: 1rem;
+}
+
+.productos-lista-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.productos-lista-container li {
+  margin-bottom: 0.5rem;
+}
+
+.productos-lista-container a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.productos-lista-container a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,40 @@
+<div>
+  <form (ngSubmit)="agregarUsuario()">
+    <label>
+      Nombre:
+      <input type="text" [(ngModel)]="usuario.nombre" name="nombre" required>
+    </label>
+    <label>
+      Apellido:
+      <input type="text" [(ngModel)]="usuario.apellido" name="apellido" required>
+    </label>
+    <label>
+      Teléfono:
+      <input type="text" [(ngModel)]="usuario.telefono" name="telefono" required>
+    </label>
+    <label>
+      Fecha de Nacimiento:
+      <input type="date" [(ngModel)]="usuario.fechaNacimiento" name="fechaNacimiento" required>
+    </label>
+    <button type="submit">Agregar Usuario</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Teléfono</th>
+        <th>Fecha de Nacimiento</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of usuarios">
+        <td>{{user.nombre}}</td>
+        <td>{{user.apellido}}</td>
+        <td>{{user.telefono}}</td>
+        <td>{{user.fechaNacimiento}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

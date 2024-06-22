@@ -1,0 +1,7 @@
+<button mat-button (click)="openDialog()">Abrir Formulario</button>
+<div *ngIf="formData">
+  <h3>Formulario</h3>
+  <p>Nombre: {{ formData.name }}</p>
+  <p>Correo: {{ formData.email }}</p>
+  <p>Dirección: {{ formData.address }}</p>
+</div>

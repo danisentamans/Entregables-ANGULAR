@@ -1,0 +1,4 @@
+--librerias externas
+ng add @angular/material
+npm install @swimlane/ngx-charts
+npm install d3@5.9.2 --save

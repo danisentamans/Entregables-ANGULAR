@@ -1,0 +1,9 @@
+<div>
+  <input [(ngModel)]="newItem" placeholder="Nuevo ítem">
+  <button (click)="addItem()">Agregar</button>
+</div>
+<ul>
+  <li *ngFor="let item of items; let i = index">
+    {{item}} <button (click)="removeItem(i)">Eliminar</button>
+  </li>
+</ul>

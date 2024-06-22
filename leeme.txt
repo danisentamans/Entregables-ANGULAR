@@ -1,0 +1,15 @@
+--crear nuevo proyecto ANGULAR
+ng new nombre-proyecto --routing --style=scss
+
+--generar módulos
+ng generate module nombre-modulo --routing
+
+--crear component
+ng generate component nombre-componente
+
+--Crear el servicio
+ng generate service nombre-servicio
+
+
+--ejecutar app
+ng serve

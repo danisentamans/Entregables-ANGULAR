@@ -1,0 +1,29 @@
+/* src/app/tienda/categorias/categorias.component.scss */
+.categorias-container {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.categorias-container h2 {
+  margin-bottom: 1rem;
+}
+
+.categorias-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.categorias-container li {
+  margin-bottom: 0.5rem;
+}
+
+.categorias-container a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.categorias-container a:hover {
+  text-decoration: underline;
+}

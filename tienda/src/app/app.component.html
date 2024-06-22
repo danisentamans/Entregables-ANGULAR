@@ -1,0 +1,15 @@
+<!-- src/app/app.component.html -->
+<div class="app-container">
+  <header class="app-header">
+    <h1>{{ title }}</h1>
+    <nav>
+      <a routerLink="/tienda" routerLinkActive="active">Inicio</a>
+    </nav>
+  </header>
+  <main class="app-main">
+    <router-outlet></router-outlet>
+  </main>
+  <footer class="app-footer">
+    <p>&copy; 2024 Tienda de Daniel</p>
+  </footer>
+</div>
